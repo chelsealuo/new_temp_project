@@ -1345,6 +1345,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Garbage Bag 3ds (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5281279710939741507, guid: d0a12a10e13c94a7e953a4d7250d52db,
+        type: 3}
+      propertyPath: m_TagString
+      value: Waste
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d0a12a10e13c94a7e953a4d7250d52db, type: 3}
 --- !u!4 &405792553 stripped
@@ -1468,6 +1473,10 @@ PrefabInstance:
     - target: {fileID: 1924217154915476, guid: aff47d0fca1e53244a323dbd82ddc90a, type: 3}
       propertyPath: m_Layer
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1924217154915476, guid: aff47d0fca1e53244a323dbd82ddc90a, type: 3}
+      propertyPath: m_TagString
+      value: Biohazard
       objectReference: {fileID: 0}
     - target: {fileID: 4898458119993624, guid: aff47d0fca1e53244a323dbd82ddc90a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2804,19 +2813,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!114 &739451872
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 739451867}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 20c43d0c4abf04f8fb8062f51328e22e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canvas: {fileID: 39444865}
 --- !u!1001 &747170680
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2928,6 +2924,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Gas Tank
+      objectReference: {fileID: 0}
+    - target: {fileID: 1911461296366304032, guid: 05e2a1357c42a45189540099890294dd,
+        type: 3}
+      propertyPath: m_TagString
+      value: Biohazard
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 05e2a1357c42a45189540099890294dd, type: 3}
@@ -3246,6 +3247,65 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 843024445}
   m_Mesh: {fileID: -5243098771569098612, guid: 785f42851206a4c8b8170b181bfd186b, type: 3}
+--- !u!1 &848472033
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 848472034}
+  - component: {fileID: 848472036}
+  - component: {fileID: 848472035}
+  m_Layer: 0
+  m_Name: WasteCollider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &848472034
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 848472033}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.025, y: -1.1, z: -0.006}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1969958561}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &848472035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 848472033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20c43d0c4abf04f8fb8062f51328e22e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvas: {fileID: 39444865}
+  text: {fileID: 1465754056}
+--- !u!65 &848472036
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 848472033}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.2, y: 0.2, z: 1.1}
+  m_Center: {x: 0, y: 2, z: 0}
 --- !u!1 &855290777
 GameObject:
   m_ObjectHideFlags: 0
@@ -3686,6 +3746,65 @@ Transform:
   m_Father: {fileID: 1403476301}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -5.352, z: 0}
+--- !u!1 &1003590557
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1003590558}
+  - component: {fileID: 1003590560}
+  - component: {fileID: 1003590559}
+  m_Layer: 0
+  m_Name: RecycleCollider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1003590558
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1003590557}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.025, y: -1.1, z: -0.006}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 739451868}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1003590559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1003590557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20c43d0c4abf04f8fb8062f51328e22e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvas: {fileID: 39444865}
+  text: {fileID: 1465754056}
+--- !u!65 &1003590560
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1003590557}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.2, y: 0.2, z: 1.1}
+  m_Center: {x: 0, y: 2, z: 0}
 --- !u!1 &1004830332
 GameObject:
   m_ObjectHideFlags: 0
@@ -3791,6 +3910,65 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1009752924}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1036851077
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1036851078}
+  - component: {fileID: 1036851080}
+  - component: {fileID: 1036851079}
+  m_Layer: 0
+  m_Name: BiohazardCollider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1036851078
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1036851077}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.025, y: -1.1, z: -0.006}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 202487891}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1036851079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1036851077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20c43d0c4abf04f8fb8062f51328e22e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvas: {fileID: 39444865}
+  text: {fileID: 1465754056}
+--- !u!65 &1036851080
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1036851077}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.2, y: 0.2, z: 1.1}
+  m_Center: {x: 0, y: 2, z: 0}
 --- !u!1 &1066674924
 GameObject:
   m_ObjectHideFlags: 0
@@ -4069,6 +4247,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8438644469757258294, guid: bf065fd77b5f74ff1a25aebefdaa59d4,
+        type: 3}
+      propertyPath: m_TagString
+      value: Waste
+      objectReference: {fileID: 0}
     - target: {fileID: 8781315305427817578, guid: bf065fd77b5f74ff1a25aebefdaa59d4,
         type: 3}
       propertyPath: m_Size.x
@@ -4252,7 +4435,7 @@ GameObject:
   - component: {fileID: 1147464154}
   m_Layer: 8
   m_Name: Cylinder.003 (1)
-  m_TagString: Untagged
+  m_TagString: Recycle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10050,6 +10233,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Garbage Bag 3ds
       objectReference: {fileID: 0}
+    - target: {fileID: 5281279710939741507, guid: d0a12a10e13c94a7e953a4d7250d52db,
+        type: 3}
+      propertyPath: m_TagString
+      value: Waste
+      objectReference: {fileID: 0}
     - target: {fileID: 5929591005272988822, guid: d0a12a10e13c94a7e953a4d7250d52db,
         type: 3}
       propertyPath: m_Enabled
@@ -10413,6 +10601,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DistanceGrabOculusWaterBottlePf
       objectReference: {fileID: 0}
+    - target: {fileID: 1942124751002478, guid: 269666423cfb5994c9d52e58a9ee03d5, type: 3}
+      propertyPath: m_TagString
+      value: Recycle
+      objectReference: {fileID: 0}
     - target: {fileID: 4168626105638504, guid: 269666423cfb5994c9d52e58a9ee03d5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 34.222
@@ -10484,25 +10676,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1545037278}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1546984244 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1264023336008922, guid: 05e717434ca0c934ba25f89865e5fa1e,
-    type: 3}
-  m_PrefabInstance: {fileID: 1969958560}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1546984245
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1546984244}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 20c43d0c4abf04f8fb8062f51328e22e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canvas: {fileID: 39444865}
 --- !u!1001 &1575574896
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10609,6 +10782,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DistanceGrabWoodBlockPf
       objectReference: {fileID: 0}
+    - target: {fileID: 1542584392503418, guid: ea7023a21c9958f439273c740ffccda8, type: 3}
+      propertyPath: m_TagString
+      value: Waste
+      objectReference: {fileID: 0}
     - target: {fileID: 4515048727945810, guid: ea7023a21c9958f439273c740ffccda8, type: 3}
       propertyPath: m_LocalPosition.x
       value: 26.767
@@ -10703,19 +10880,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: f5c4c56315ab7024bb05558b44b4a970, type: 3}
---- !u!114 &1619744219
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1619744217}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 20c43d0c4abf04f8fb8062f51328e22e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canvas: {fileID: 39444865}
 --- !u!1001 &1677253969
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11542,7 +11706,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4666793310785968, guid: 05e717434ca0c934ba25f89865e5fa1e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 16.86
+      value: 16.927
       objectReference: {fileID: 0}
     - target: {fileID: 4666793310785968, guid: 05e717434ca0c934ba25f89865e5fa1e, type: 3}
       propertyPath: m_LocalPosition.z

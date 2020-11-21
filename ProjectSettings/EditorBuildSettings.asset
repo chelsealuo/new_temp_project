@@ -12,10 +12,10 @@ EditorBuildSettings:
     path: Assets/Assignment_3/Scenes/JediMakerLab.unity
     guid: d757d9fe77e6d44e0bbd86f70c941725
   - enabled: 1
-    path: Assets/Final/Scenes/ocean.unity
+    path: Assets/final/Scenes/ocean.unity
     guid: b54e312df8ab54707a29c65fe8b8de1e
   - enabled: 0
-    path: Assets/Final/Scenes/scene1.unity
+    path: Assets/final/Scenes/scene1.unity
     guid: 51230ad900b924d38a6afe5097c44262
   - enabled: 0
     path: Assets/Crest/Crest-Examples/Main/Scenes/main.unity
