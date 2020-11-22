@@ -11,6 +11,7 @@ public class LocomotionSwim : MonoBehaviour
     [SerializeField] private Transform trackingSpace;
     private new Rigidbody playerRB;
     private Vector3 currentDirection;
+    private AudioSource swimSound;
 
 
 
@@ -28,6 +29,7 @@ public class LocomotionSwim : MonoBehaviour
     private void Awake()
     {
         playerRB = GetComponent<Rigidbody>();
+        swimSound = GetComponent<AudioSource>();
     }
 
     void Start()
@@ -92,15 +94,18 @@ public class LocomotionSwim : MonoBehaviour
                 Vector3 worldSpaceVelocity =trackingSpace.TransformDirection(localVelocity);
                 playerRB.AddForce(worldSpaceVelocity * swimmingForce, ForceMode.Acceleration);
                 currentDirection = worldSpaceVelocity.normalized;
+                //swimSound.volume = 1f;
             }
 
         }
         if (playerRB.velocity.sqrMagnitude > 0.01f && currentDirection != Vector3.zero)
         {
+            //swimSound.volume = 0.5f;
             playerRB.AddForce(-playerRB.velocity * resistanceForce, ForceMode.Acceleration);
         }
         else
         {
+            //swimSound.volume = 0.2f;
             currentDirection = Vector3.zero;
         }
     }
